@@ -20,8 +20,12 @@ payaraMicro {
 
 dependencies {
     providedCompile 'org.eclipse.microprofile:microprofile:4.0.1'
-    
-    
+
+    implementation 'javax.transaction:javax.transaction-api:1.2'
+    implementation 'org.hibernate:hibernate-entitymanager:4.1.7.Final'
+    testImplementation 'com.h2database:h2:2.0.202'
+
+    compileOnly 'jakarta.platform:jakarta.jakartaee-api:9.0.0'
 }
 
 repositories {
